@@ -1,0 +1,486 @@
+/* ========== NAVBAR CUSTOMIZATION ========== */
+
+.navbar {
+  background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 0;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #2563eb !important;
+  letter-spacing: -0.5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #1e40af !important;
+}
+
+.nav-link {
+  color: #6b7280 !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #2563eb !important;
+  background-color: rgba(37, 99, 235, 0.08);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: #2563eb !important;
+  background-color: rgba(37, 99, 235, 0.1);
+  border-bottom: 2px solid #2563eb;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232563EB' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ========== CONTAINER ========== */
+
+.container {
+  max-width: 1400px !important;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+main {
+  min-height: calc(100vh - 80px);
+  padding: 2rem 0;
+}
+
+/* ========== UTILITY CLASSES ========== */
+
+.section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb 0%, #10b981 100%);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+/* ========== DIVIDER ========== */
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #e5e7eb 50%,
+    transparent 100%
+  );
+  margin: 2rem 0;
+}
+
+.divider-vertical {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    #e5e7eb 50%,
+    transparent 100%
+  );
+}
+
+/* ========== SPACING UTILITIES ========== */
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+.mt-3 {
+  margin-top: 1rem !important;
+}
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+.mt-5 {
+  margin-top: 2rem !important;
+}
+.mt-6 {
+  margin-top: 3rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+.mb-5 {
+  margin-bottom: 2rem !important;
+}
+.mb-6 {
+  margin-bottom: 3rem !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+.p-2 {
+  padding: 0.5rem !important;
+}
+.p-3 {
+  padding: 1rem !important;
+}
+.p-4 {
+  padding: 1.5rem !important;
+}
+.p-5 {
+  padding: 2rem !important;
+}
+.p-6 {
+  padding: 3rem !important;
+}
+
+/* ========== TEXT UTILITIES ========== */
+
+.text-center {
+  text-align: center !important;
+}
+.text-start {
+  text-align: start !important;
+}
+.text-end {
+  text-align: end !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+.font-semibold {
+  font-weight: 600 !important;
+}
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.text-primary {
+  color: #2563eb !important;
+}
+.text-secondary {
+  color: #10b981 !important;
+}
+.text-danger {
+  color: #ef4444 !important;
+}
+.text-warning {
+  color: #f59e0b !important;
+}
+.text-success {
+  color: #10b981 !important;
+}
+.text-muted {
+  color: #6b7280 !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* ========== BACKGROUND UTILITIES ========== */
+
+.bg-light {
+  background-color: #f3f4f6 !important;
+}
+.bg-primary {
+  background-color: #2563eb !important;
+}
+.bg-success {
+  background-color: #10b981 !important;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+/* ========== BOX SHADOW UTILITIES ========== */
+
+.shadow-none {
+  box-shadow: none !important;
+}
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ========== ROUNDED UTILITIES ========== */
+
+.rounded-none {
+  border-radius: 0 !important;
+}
+.rounded-sm {
+  border-radius: 0.25rem !important;
+}
+.rounded {
+  border-radius: 0.5rem !important;
+}
+.rounded-md {
+  border-radius: 0.75rem !important;
+}
+.rounded-lg {
+  border-radius: 1rem !important;
+}
+.rounded-full {
+  border-radius: 9999px !important;
+}
+
+/* ========== BORDER UTILITIES ========== */
+
+.border-none {
+  border: none !important;
+}
+.border {
+  border: 1px solid #e5e7eb !important;
+}
+.border-2 {
+  border: 2px solid #e5e7eb !important;
+}
+.border-top {
+  border-top: 1px solid #e5e7eb !important;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e7eb !important;
+}
+.border-primary {
+  border-color: #2563eb !important;
+}
+.border-success {
+  border-color: #10b981 !important;
+}
+.border-danger {
+  border-color: #ef4444 !important;
+}
+
+/* ========== OPACITY UTILITIES ========== */
+
+.opacity-0 {
+  opacity: 0 !important;
+}
+.opacity-25 {
+  opacity: 0.25 !important;
+}
+.opacity-50 {
+  opacity: 0.5 !important;
+}
+.opacity-75 {
+  opacity: 0.75 !important;
+}
+.opacity-100 {
+  opacity: 1 !important;
+}
+
+/* ========== DISPLAY UTILITIES ========== */
+
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.d-grid {
+  display: grid !important;
+}
+.d-inline {
+  display: inline !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  justify-content: space-between !important;
+}
+.flex-around {
+  justify-content: space-around !important;
+}
+.flex-start {
+  justify-content: flex-start !important;
+}
+.flex-end {
+  justify-content: flex-end !important;
+}
+
+.gap-1 {
+  gap: 0.25rem !important;
+}
+.gap-2 {
+  gap: 0.5rem !important;
+}
+.gap-3 {
+  gap: 1rem !important;
+}
+.gap-4 {
+  gap: 1.5rem !important;
+}
+.gap-5 {
+  gap: 2rem !important;
+}
+
+/* ========== POSITION UTILITIES ========== */
+
+.relative {
+  position: relative !important;
+}
+.absolute {
+  position: absolute !important;
+}
+.fixed {
+  position: fixed !important;
+}
+.sticky {
+  position: sticky !important;
+}
+
+/* ========== TRANSFORM & ANIMATION UTILITIES ========== */
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-fast {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-slow {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .nav-link {
+    padding: 0.75rem 0.5rem !important;
+    margin: 0.5rem 0;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  main {
+    min-height: auto;
+  }
+}
