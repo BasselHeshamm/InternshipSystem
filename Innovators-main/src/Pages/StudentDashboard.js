@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useStudentData } from "../hooks/useDashboardData";
+import { useAuth } from "../context/AuthContext";
 import BrowseInternships from "./BrowseInternships";
 import {
   Card,
@@ -59,7 +61,6 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import "./StudentDashboard.css";
 import NavigationButtons from "../Components/NavigationButtons";
-
 // ── ALL DATA (unchanged) ──
 const initialSuggestedInternships = [
   {
@@ -536,7 +537,8 @@ function StudentDashboard() {
   const [showAppealModal, setShowAppealModal] = useState(false);
   const [selectedReport, setSelectedReport] = useState(null);
   const [appealMessage, setAppealMessage] = useState("");
-
+  const { user } = useAuth();
+  const apiData = useStudentData();
   const videoData = majorVideos[profile.major] || majorVideos["default"];
   const progressPercent = ((currentStep + 1) / progressSteps.length) * 100;
 

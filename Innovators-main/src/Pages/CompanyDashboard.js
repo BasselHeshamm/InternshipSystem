@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useCompanyData } from "../hooks/useDashboardData";
+
 import {
   Card,
   Button,
@@ -469,6 +471,7 @@ function getBadgeClass(status) {
 }
 
 function CompanyDashboard({ isSCADOffice = false }) {
+  const apiData = useCompanyData();
   const [activeTab, setActiveTab] = useState("overview");
   const [internships, setInternships] = useState(initialInternships);
   const [form, setForm] = useState({
