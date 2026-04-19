@@ -69,6 +69,3 @@ InternshipSystem/
     ├── middleware/    # JWT auth middleware
     ├── models/        # MongoDB schemas
     └── routes/        # Express route handlers
-
-**Bassel Hesham** — Business Informatics, German University in Cairo  
-Faculty of Management Technology, Class of 2026
